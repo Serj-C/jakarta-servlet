@@ -3,8 +3,10 @@
     Author: Serj C.
 --%>
 
-<html xmlns:jsp="http://xmlns.jcp.org/JSP/Page" xmlns:c="jakarta.tags.core">
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
+<!DOCTYPE html>
+<html>
     <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
     <jsp:directive.page errorPage="errorPage.jsp"/>
 

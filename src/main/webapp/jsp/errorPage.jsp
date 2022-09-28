@@ -3,8 +3,8 @@
     Author: Serj C.
 --%>
 
-<%@ page contentType="text/html" pageEncoding="UTF-8" %>
-<%@ page isErrorPage="true" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page isErrorPage="true"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 

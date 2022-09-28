@@ -3,9 +3,10 @@
     Author: Serj C.
 --%>
 
-<html xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
-    xmlns:c="jakarta.tags.core">
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
+<!DOCTYPE html>
+<html>
     <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
     <jsp:useBean id="authorBean" scope="session" class="org.example.beans.AuthorBean"/>
 
@@ -18,13 +19,17 @@
             The authors are printed below.
         </p>
         <table border="1">
-            <tr><th>First Name</th><th>Last Name</th></tr>
-            <c:forEach var="author" items="${authorBean.authorList}">
-                <tr>
-                    <td><c:out value="${author.first}"/></td>
-                    <td><c:out value="${author.last}"/></td>
-                </tr>
-            </c:forEach>
+            <thead>
+                <tr><th>First Name</th><th>Last Name</th></tr>
+            </thead>
+            <tbody>
+                <c:forEach var="author" items="${authorBean.authorList}">
+                    <tr>
+                        <td>${author.first}</td>
+                        <td>${author.last}</td>
+                    </tr>
+                </c:forEach>
+            </tbody>
         </table>
     </body>
 </html>
