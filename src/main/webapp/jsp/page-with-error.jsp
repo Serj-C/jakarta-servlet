@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
-    <jsp:directive.page errorPage="errorPage.jsp"/>
+    <jsp:directive.page errorPage="error-page.jsp"/>
 
     <head>
         <title>Handling JSP Errors</title>

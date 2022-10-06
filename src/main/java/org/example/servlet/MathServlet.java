@@ -32,7 +32,7 @@ public class MathServlet extends HttpServlet {
             writer.println("<p>Please use number only... try again.</p>");
         }
         writer.println("<br/><br/>");
-        writer.println("<a href='page.html'>Add Two More Numbers</a>");
+        writer.println("<a href='math-page.html'>Add Two More Numbers</a>");
         writer.println("</body></html>");
         writer.close();
     }

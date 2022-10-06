@@ -15,9 +15,10 @@ public class PostgreSqlConnection {
             String user = "postgres";
             String password = "<toBeProvided>";
 
+            Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(url, user, password);
             System.out.println("Connected to PostgreSQL server successfully.");
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             Logger.getLogger(PostgreSqlConnection.class.getName()).log(Level.SEVERE, null, e);
         }
 
